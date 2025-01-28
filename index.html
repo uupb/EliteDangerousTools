@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Dangerous Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Elite Dangerous Tools
+    </header>
+
+    <main>
+        <section>
+            <h1>Elite Dangerous Community Tools</h1>
+            <p>Welcome to the tools page! Here you'll find resources to enhance your Elite Dangerous experience. Currently, only one tool is available, but the page is designed to expand as more tools are added.</p>
+        </section>
+
+        <!-- Tool 1 Section -->
+        <section class="tool">
+            <div class="tool-card">
+                <img src="placeholder.jpg" alt="Tool Placeholder" class="tool-image">
+                <div class="tool-content">
+                    <h2>Tool Name</h2>
+                    <p>A brief description of the tool and its functionality goes here. This tool is designed to [functionality details].</p>
+                    <button class="expand-btn" onclick="toggleDetails('tool-details-1')">Show Details</button>
+                    <div id="tool-details-1" class="tool-details" style="display: none;">
+                        <ul>
+                            <li>Feature 1: Description</li>
+                            <li>Feature 2: Description</li>
+                            <li>Feature 3: Description</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Data sourced from Inara and other community resources. This project is for personal and community use only.</p>
+            <p>hyperFixationStudios, All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
